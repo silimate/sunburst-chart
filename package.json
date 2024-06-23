@@ -38,7 +38,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "rimraf dist && rollup -c",
+    "build": "rm -rf dist && rollup -c",
     "dev": "rollup -w -c rollup.config.dev.js",
     "prepare": "npm run build"
   },
@@ -62,7 +62,6 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "postcss": "^8.4.31",
-    "rimraf": "^5.0.5",
     "rollup": "^4.4.1",
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-postcss": "^4.0.2",
